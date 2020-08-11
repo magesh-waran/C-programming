@@ -21,20 +21,14 @@ int main() {
     for(i=1;i<(1<<len);i++){
         k=0;
         for(j=0;j<len;j++){
-            if((i&(1<<j))!=0)
-            temp[k++]=a[j];
-        }
-        temp[k]='\0';
-        if(k!=0)
+            if((i&(1<<if(k!=0)
         strcpy(store[st++],temp);
     }
     //sort the alphabets
     for(i=0;i<st;i++){
         for(j=i+1;j<st;j++){
             if(strcmp(store[i],store[j])>0){
-                strcpy(temp,store[i]);
-                strcpy(store[i],store[j]);
-                strcpy(store[j],temp);
+     
             }
         }
         printf("%s\n",store[i]);
